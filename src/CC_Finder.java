@@ -6,11 +6,12 @@ public class CC_Finder
 {
     public static void main(String[] args)
     {
+        String filename = args[0];
         int[][] img = new int[71][71];
         String str;
         try
         {
-            BufferedReader in = new BufferedReader(new FileReader("girl.txt"));
+            BufferedReader in = new BufferedReader(new FileReader(filename));
             int n = 26;
             for (int i = 0; i < 71; i++)
             {
